@@ -1,0 +1,222 @@
+/* Reset básico */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #c2c2ec;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Estilo do título */
+h1 {
+    font-size: 2.5em;
+    color: #6b4f4f;
+    text-align: center;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Estilo do parágrafo */
+p {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 1.2em;
+    animation: slideIn 2s ease-in-out;
+}
+
+/* Estilo da imagem */
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #6b4f4f;
+    border-radius: 10px;
+    animation: zoomIn 3s ease-in-out;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Botão animado */
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #6b4f4f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: bounce 2s infinite;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4f2f2f;
+}
+
+/* Animação do botão */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+body {
+    background-color: #9ed4d8; /* Cor suave e acolhedora */
+    color: #333;
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.escritor {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.escritor-imagem img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.escritor-info {
+    max-width: 600px;
+}
+
+.escritor-info h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.escritor-info p {
+    font-size: 18px;
+    color: #555;
+}
+
+.escritor-info h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.escritor-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.escritor-info ul li {
+    font-size: 18px;
+    color: #555;
+}
+
+.escritor-info ul li::before {
+    content: "• ";
+    color: #007BFF;
+}
+
+/* Estilo do botão em formato de livro */
+.botao-livro button {
+    background-color: transparent;
+    border: none;
+    padding: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Efeito de animação no livro (escala ao passar o mouse) */
+  .botao-livro button:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Estilo da imagem do ícone do livro */
+  #livro-icon {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease;
+  }
+  
+  #livro-icon:hover {
+    transform: rotate(15deg);
+  } 
+  
+  /* Estilo do box de frase */
+  .box-frase {
+    background-color: #dfe09c;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 1.25rem;
+    font-style: italic;
+    color: #333;
+    min-height: 100px;
+  }
+  
+  /* Estilo do container da frase */
+  #frase-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  
